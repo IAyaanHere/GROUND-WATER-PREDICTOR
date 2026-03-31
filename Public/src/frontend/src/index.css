@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* AquaStat AI — Deep Navy / Neon Cyan Theme */
+    --background: 0.1 0.03 230;
+    --foreground: 0.97 0.01 220;
+    --card: 0.14 0.03 225;
+    --card-foreground: 0.97 0.01 220;
+    --popover: 0.15 0.03 220;
+    --popover-foreground: 0.97 0.01 220;
+    --primary: 0.78 0.18 200;
+    --primary-foreground: 0.1 0.03 230;
+    --secondary: 0.55 0.16 160;
+    --secondary-foreground: 0.1 0.03 230;
+    --muted: 0.22 0.04 220;
+    --muted-foreground: 0.65 0.03 215;
+    --accent: 0.38 0.07 200;
+    --accent-foreground: 0.97 0.01 220;
+    --destructive: 0.58 0.22 25;
+    --destructive-foreground: 0.97 0 0;
+    --border: 0.28 0.04 215;
+    --input: 0.2 0.04 220;
+    --ring: 0.78 0.18 200;
+
+    --chart-1: 0.78 0.18 200;
+    --chart-2: 0.65 0.12 185;
+    --chart-3: 0.55 0.16 160;
+    --chart-4: 0.78 0.15 65;
+    --chart-5: 0.58 0.22 25;
+    --sidebar: 0.14 0.03 225;
+    --sidebar-foreground: 0.97 0.01 220;
+    --sidebar-primary: 0.78 0.18 200;
+    --sidebar-primary-foreground: 0.1 0.03 230;
+    --sidebar-accent: 0.25 0.04 215;
+    --sidebar-accent-foreground: 0.97 0.01 220;
+    --sidebar-border: 0.28 0.04 215;
+    --sidebar-ring: 0.78 0.18 200;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Poppins", system-ui, sans-serif;
+    background: linear-gradient(135deg, #050b18 0%, #071422 50%, #05101c 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0
+      rgba(255, 255, 255, 0.06);
+  }
+}
+
+/* Leaflet map customization */
+.leaflet-container {
+  background: #050b18;
+  font-family: "Poppins", system-ui, sans-serif;
+}
+
+.leaflet-tile {
+  filter: brightness(0.85) saturate(0.9);
+}
