@@ -9,7 +9,7 @@
 
 AquaStatAI is an AI-powered groundwater level prediction system that uses machine learning to forecast groundwater depths (in MBGL - Meters Below Ground Level). The system analyzes spatial and environmental factors to provide accurate predictions for groundwater management and agricultural planning.
 
-**Live Demo:** [https://aquastat.vercel.app](https://aquastatai.vercel.app)
+**Live Demo:** [https://aquastat.vercel.app](https://aquastat.vercel.app)
 
 ## 🛠 Tech Stack
 
