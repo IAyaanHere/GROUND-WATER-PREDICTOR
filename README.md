@@ -206,7 +206,7 @@ gunicorn           # WSGI HTTP server
 - **Environment:** Production
 
 ### Frontend (Vercel)
-- **URL:** https://aquastatai.vercel.app
+- **URL:** https://aquastat.vercel.app
 - **Framework:** React/Next.js
 - **Deployment:** Vercel hosting
 
